@@ -1,0 +1,42 @@
+.education {
+    padding: 2rem;
+    background-color: #f9fafb;
+  }
+  
+  .education h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    text-align: center;
+    margin-bottom: 2rem;
+  }
+  
+  .education-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+  
+  .education-item {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 1.5rem;
+    transition: transform 300ms, box-shadow 300ms;
+  }
+  
+  .education-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  .institution {
+    font-weight: bold;
+    color: #555;
+  }
+  
+  .graduation-year {
+    font-style: italic;
+    color: #666;
+  }
+  

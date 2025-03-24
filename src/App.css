@@ -1,0 +1,68 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  background-color: #f9fafb; /* Light background */
+  color: #333; /* Darker text for readability */
+}
+
+.logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.logo:hover {
+  filter: drop-shadow(0 0 2em #91a7ff); /* Subtle blue glow */
+}
+
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafb); /* React brand color */
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+  background: linear-gradient(135deg, #e3f2fd, #f9fafb); /* Soft blue gradient */
+  border-radius: 12px; /* Rounded corners */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: transform 300ms, box-shadow 300ms;
+}
+
+.card:hover {
+  transform: translateY(-5px); /* Lift effect */
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15); /* Stronger shadow */
+}
+
+.read-the-docs {
+  color: #607d8b; /* Cool blue-gray for text */
+}
+
+.read-the-docs:hover {
+  color: #37474f; /* Darker shade on hover */
+}
+
+body {
+  background-color: #f9fafb; /* Match this with your light theme */
+  margin: 0; /* Reset default browser margins */
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+

@@ -1,0 +1,51 @@
+.contact {
+    padding: 2rem;
+    background: linear-gradient(to right, #e3f2fd, #f9fafb); /* Light gradient background */
+    text-align: center;
+  }
+  
+  .contact h1 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 2rem;
+  }
+  
+  .contact-items {
+    display: flex;
+    flex-direction: column; /* Stack items vertically */
+    gap: 1.5rem; /* Add space between items */
+    align-items: center; /* Center-align the items */
+  }
+  
+  .contact-item {
+    display: flex;
+    align-items: center; /* Align icon and text vertically */
+    gap: 1rem; /* Space between icon and text */
+    font-family: 'Lato', sans-serif;
+    font-size: 1rem;
+    color: #555;
+    text-align: left; /* Align text properly */
+  }
+  
+  .contact-item a {
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    transition: color 300ms ease;
+  }
+  
+  .contact-item a:hover {
+    color: #1a73e8; /* Accent color on hover */
+  }
+  
+  .contact-icon {
+    font-size: 1.5rem; /* Adjust icon size */
+    color: #1a73e8;
+    transition: transform 300ms ease;
+  }
+  
+  .contact-item:hover .contact-icon {
+    transform: scale(1.2); /* Scale icons on hover */
+  }
+  
