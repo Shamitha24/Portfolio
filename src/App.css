@@ -1,12 +1,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap');
 
+body {
+  background: #f5f7fa;
+  background-image: url("https://www.transparenttextures.com/patterns/cubes.png");
+  margin: 0;
+  font-family: 'Poppins', 'Segoe UI', sans-serif;
+}
+
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-  background-color: #f9fafb; /* Light background */
-  color: #333; /* Darker text for readability */
+  background: transparent; /* Let body background show through */
+  color: #333;
 }
 
 .logo {
@@ -58,11 +65,5 @@
 
 .read-the-docs:hover {
   color: #37474f; /* Darker shade on hover */
-}
-
-body {
-  background-color: #f9fafb; /* Match this with your light theme */
-  margin: 0; /* Reset default browser margins */
-  font-family: 'Poppins', 'Segoe UI', sans-serif;
 }
 

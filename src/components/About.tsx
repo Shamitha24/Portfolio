@@ -1,6 +1,7 @@
 import React from "react";
 import "../styles/About.css";
 import { motion } from "framer-motion";
+import TypingText from "./TypingText";
 
 // Again, no props here
 const About: React.FC = () => {
@@ -19,11 +20,16 @@ const About: React.FC = () => {
         <h1>
             <img src="./pencil.svg" width="54"
     height="54"
-    style={{ verticalAlign: "middle", margin: "0 5px" }} />Shamitha Mamidi
+    style={{ verticalAlign: "middle", margin: "0 5px" }} />
+            <TypingText text="Shamitha Mamidi" speed={60} />
 </h1>
 
-          <p>Aspiring Software Development Engineer</p>
-          <p>Based in Texas, USA</p>
+          <p>
+          <TypingText text="Aspiring Software Development Engineer" speed={30} />
+          </p>
+          <p>
+          <TypingText text="Based in Texas, USA" speed={30} />
+          </p>
         </div>
       </section>
     );

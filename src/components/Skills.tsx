@@ -6,7 +6,7 @@ const Skills: React.FC = () => {
     const skills = [
         { name: "C", logo: "./c.svg" },
         { name: "C++", logo: "./cpp.svg" },
-        { name: "C##", logo: "./csp.svg" },
+        { name: "C#", logo: "./csp.svg" },
         { name: "Java", logo: "./java.svg" },
         { name: "Python", logo: "./python.svg" },
         { name: "Hive", logo: "./hive.svg" },
@@ -19,6 +19,9 @@ const Skills: React.FC = () => {
       { name: "React", logo: "./react.svg" },
       { name: "Github", logo: "./github.svg" },
       { name: "Dundas BI", logo: "./dundas.png" },
+      {name: '.NET', logo:"./net.svg"},
+      {name: "AWS", logo:"./aws.svg"},
+      {name: "Bash", logo: "./bash.svg"},
     //   { name: "Dashboard Design", logo: "./html.svg" },
     //   { name: "Data Visualization", logo: "./html.svg" },
     //   { name: "Data Analysis", logo: "./html.svg" },

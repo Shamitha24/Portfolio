@@ -1,37 +1,54 @@
 import React from "react";
 import "../styles/Contact.css";
+import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt } from "react-icons/fa";
 
-import { FaLinkedin, FaGithub, FaEnvelope, FaPhoneAlt } from "react-icons/fa"; // Icons from react-icons
+const contactDetails = [
+  {
+    icon: <FaLinkedin className="contact-icon" />,
+    label: "LinkedIn",
+    link: "https://www.linkedin.com/in/shamitha-mamidi-1556a0233/",
+    sub: "Connect professionally",
+  },
+  {
+    icon: <FaGithub className="contact-icon" />,
+    label: "GitHub",
+    link: "https://github.com/Shamitha24",
+    sub: "Explore my code",
+  },
+  {
+    icon: <FaEnvelope className="contact-icon" />,
+    label: "E-Mail",
+    link: "mailto:sxm230333@utdallas.edu",
+    sub: "sxm230333@utdallas.edu",
+  },
+  {
+    icon: <FaPhoneAlt className="contact-icon" />,
+    label: "Mobile",
+    link: "tel:+12148996546",
+    sub: "+1 (214) 899-6546",
+  },
+];
 
 const Contact: React.FC = () => {
   return (
     <section id="contact" className="contact">
       <h1>Contact Me</h1>
-      <div className="contact-items">
-        <div className="contact-item">
-          <FaLinkedin className="contact-icon" />
-          <a href="https://www.linkedin.com/in/shamitha-mamidi-1556a0233/" target="_blank" rel="noopener noreferrer">
-            LinkedIn
+      <div className="contact-cards">
+        {contactDetails.map((item, idx) => (
+          <a
+            key={idx}
+            href={item.link}
+            className="contact-card"
+            target={item.label !== "Mobile" ? "_blank" : undefined}
+            rel={item.label !== "Mobile" ? "noopener noreferrer" : undefined}
+          >
+            <div className="icon-wrapper">{item.icon}</div>
+            <div className="contact-info">
+              <span className="contact-label">{item.label}</span>
+              <span className="contact-sub">{item.sub}</span>
+            </div>
           </a>
-        </div>
-        <div className="contact-item">
-          <FaGithub className="contact-icon" />
-          <a href="https://github.com/Shamitha24" target="_blank" rel="noopener noreferrer">
-            GitHub
-          </a>
-        </div>
-        <div className="contact-item">
-          <FaEnvelope className="contact-icon" />
-          <a href="mailto:sxm230333@utdallas.edu">
-            E-Mail
-          </a>
-        </div>
-        <div className="contact-item">
-          <FaPhoneAlt className="contact-icon" />
-          <a href="tel:+1 2148996546">
-          Mobile
-          </a>
-        </div>
+        ))}
       </div>
     </section>
   );

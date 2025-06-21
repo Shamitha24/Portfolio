@@ -1,55 +1,99 @@
-## Live link: https://shamithamamidi.netlify.app/
-# React + TypeScript + Vite
+# Shamitha Mamidi - Portfolio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+[Live Website 🚀](https://shamithamamidi.netlify.app/)
 
-Currently, two official plugins are available:
+Welcome to my personal portfolio website!  
+This project showcases my skills, projects, and experience as an aspiring Software Development Engineer.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## ✨ Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- **Modern UI**: Built with React, TypeScript, and Vite for fast performance and a smooth developer experience.
+- **Responsive Design**: Looks great on desktop and mobile devices.
+- **Animated Sections**: Flashy UI with typing text effects and subtle animations.
+- **Project Highlights**: Detailed project descriptions with links to GitHub repositories.
+- **Contact Section**: Easy ways to connect via LinkedIn, GitHub, email, or phone.
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 🛠️ Tech Stack
+
+- [React](https://react.dev/)
+- [TypeScript](https://www.typescriptlang.org/)
+- [Vite](https://vitejs.dev/)
+- [Framer Motion](https://www.framer.com/motion/) (for animations)
+- [React Icons](https://react-icons.github.io/react-icons/) (for icons)
+- [CSS3](https://developer.mozilla.org/en-US/docs/Web/CSS) (custom styling)
+
+---
+
+## 📦 Getting Started
+
+1. **Clone the repository:**
+   ```sh
+   git clone https://github.com/Shamitha24/Portfolio.git
+   cd Portfolio
+   ```
+
+2. **Install dependencies:**
+   ```sh
+   npm install
+   ```
+
+3. **Start the development server:**
+   ```sh
+   npm run dev
+   ```
+
+4. **Open in your browser:**
+   Visit [http://localhost:5173](http://localhost:5173) (or the port shown in your terminal).
+
+---
+
+## 📁 Project Structure
+
+```
+src/
+  components/    # React components (About, Projects, Experience, Contact, etc.)
+  styles/        # CSS files for styling
+  assets/        # Images and static assets
+  App.tsx        # Main app component
+  main.tsx       # Entry point
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+---
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+## 📝 Customization
 
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
-```
+- **Update your info:**  
+  Edit the files in `src/components/` (About, Projects, Experience, Contact) to add your own details.
+- **Change styles:**  
+  Modify CSS in `src/styles/` to personalize the look and feel.
+
+---
+
+## 📤 Deployment
+
+This site is deployed on [Netlify](https://www.netlify.com/).  
+You can deploy your own version easily by connecting your GitHub repo to Netlify or Vercel.
+
+---
+
+## 📬 Contact
+
+Feel free to connect with me via [LinkedIn](https://www.linkedin.com/in/shamitha-mamidi-1556a0233/) or [GitHub](https://github.com/Shamitha24).
+
+---
+
+## 🖼️ Preview
+
+![Portfolio Screenshot](./assets/portfolio-preview.png) <!-- Add a screenshot if available -->
+
+---
+
+## License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+---

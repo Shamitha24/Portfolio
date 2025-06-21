@@ -9,12 +9,20 @@ interface Experience {
   
   const experiences: Experience[] = [
     {
+        role: "Application Development Intern",
+        company: "Coherent Corp. ",
+        duration: "June 2025 – July 2025",
+        description: [
+            "Developing a desktop application using C#, WPF to automate data management workflows related to wafer fabrication, enabling engineers to efficiently collect, analyze, and utilize process data across multiple fabrication tools optimizing RESTful APIs to deliver response times under 150ms, boosting responsiveness by 40%.",
+            "Leveraged automation techniques including VBA-based reporting and Excel data processing to streamline manual workflows and collaborated with cross-functional engineering teams to integrate real-time and historical data into internal systems, resulting in a 30% enhancement in engineering insight accuracy, 25% improvement in data accuracy, and faster, more precise data retrieval through maintained and upgraded automation databases."
+        ]
+    },
+    {
         role: "CS Outreach Lead",
         company: "The University of Texas at Dallas",
         duration: "September 2024 - February 2025",
         description: [
-            "Designing and delivering an introductory course on coding contest problems focusing on data structures, dynamic programming, and greedy algorithms in Python, Java, and C++, guiding 9th-12th grade students through a progression from basic concepts to advanced problem-solving techniques.",
-            "Conducting live coding sessions, providing one-on-one mentoring, and facilitating coding challenges to support students in developing strong programming and problem-solving skills within a collaborative environment."
+            "Orchestrated a cutting-edge coding bootcamp at UT Dallas, mentoring 9th-12th graders in advanced data structures, dynamic programming, and greedy algorithms using Python, Java, and C++, delivering interactive coding sessions and personalized coaching to enhance algorithmic problem-solving skills by 45%."
         ]
     },
     {
@@ -30,7 +38,8 @@ interface Experience {
         role: "Software Engineer Intern ",
         company: "Honeywell Inc.",
         duration: "May 2021 - July 2021",
-        description: ["Worked on the project Sample Dashboard Project Export, which can be used in upcoming projects that involve the development of UNEX dashboards for displaying KPIs, ultimately leading to a 35% reduction in manual effort to design a dashboard.", "Designed data cubes, standard templates and sample dashboards including predictive analysis and inventory analysis dashboards using Dundas BI, UKPI application and MS Excel."],
+        description: ["Worked on the Sample Dashboard Project Export, extensively used in upcoming projects involving development of dynamic UNEX dashboards for displaying KPIs, leading to a 35% reduction in manual effort.", 
+          "Designed 5+ data cubes, standardized templates, and sample dashboards including predictive analysis and inventory analysis dashboards using Dundas BI, UKPI application, and MS Excel, improving data insights."],
       },
   ];
   
@@ -49,7 +58,9 @@ interface Experience {
   
   const ExperienceItem: React.FC<{ experience: Experience }> = ({ experience }) => {
     const [isExpanded, setIsExpanded] = useState(false);
-  
+
+    const hasMultiplePoints = experience.description.length > 1;
+
     return (
       <div className="experience-item">
         <h2>{experience.role} at {experience.company}</h2>
@@ -59,12 +70,14 @@ interface Experience {
             ? experience.description.map((point, idx) => <li key={idx}>{point}</li>)
             : experience.description.slice(0, 1).map((point, idx) => <li key={idx}>{point}</li>)}
         </ul>
-        <button
-          className="toggle-btn"
-          onClick={() => setIsExpanded(!isExpanded)}
-        >
-          {isExpanded ? "Show Less" : "Show More"}
-        </button>
+        {hasMultiplePoints && (
+          <button
+            className="toggle-btn"
+            onClick={() => setIsExpanded(!isExpanded)}
+          >
+            {isExpanded ? "Show Less" : "Show More"}
+          </button>
+        )}
       </div>
     );
   };

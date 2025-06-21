@@ -1,6 +1,6 @@
 .projects {
     padding: 2rem;
-    background-color: #f9fafb; /* Light background color */
+    background: transparent;
   }
   
   .projects h1 {
@@ -33,6 +33,18 @@
     font-size: 1.5rem;
     color: #1a73e8; /* Accent color for project titles */
     margin: 0 0 0.5rem 0;
+  }
+
+   .project-item ul {
+    margin: 1rem 0; /* Space above and below the list */
+    list-style-type: disc; /* Keep default bullets (or adjust as needed) */
+  }
+  
+  .project-item li {
+    margin-bottom: 0.5rem; /* Add space below each list item */
+    font-size: 1rem;
+    color: #555;
+    text-align:justify;
   }
   
   .project-item p {
