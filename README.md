@@ -88,7 +88,7 @@ Feel free to connect with me via [LinkedIn](https://www.linkedin.com/in/shamitha
 
 ## 🖼️ Preview
 
-![Portfolio Screenshot](./assets/portfolio-preview.png) <!-- Add a screenshot if available -->
+![Portfolio Screenshot](./src/assets/portfolio-preview.png) <!-- Add a screenshot if available -->
 
 ---
 
